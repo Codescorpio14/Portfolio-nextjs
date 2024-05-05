@@ -1,0 +1,64 @@
+@use "assets" as *;
+
+.hero {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    row-gap: 3rem;
+    padding: 4rem 1rem;
+    @include container();
+
+    .hero-image {
+        
+            max-width: 20rem;
+            height: auto;
+            
+        
+    }
+
+    .hero-text {
+        font-size: $fs-h3;
+        font-weight: $fw-semi;
+        color: $c-accent;
+
+        .hero-strong {
+            font-weight: $fw-bold;
+            color: $c-dark;
+            text-transform: capitalize;
+        }
+    }
+
+    .hero-btn {
+        margin-top: 2rem;
+        padding: 0.5rem 1.5rem;
+    }
+  }
+
+@include mq($tablet){
+.hero{
+
+    .hero-image {
+        max-width: 40rem;
+    }
+
+    .hero-text {
+    font-size: $fs-h2;
+    font-weight: $fw-semi;
+    color: $c-accent;
+    }
+
+    .hero-sub {
+    font-size: $fs-h3;
+    }
+}
+}
+
+@include mq($laptop){
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 5rem 1.5rem;
+    }
+}
