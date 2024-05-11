@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-intro">
         <div className="about-text">
           <p>
-            Hello, I'm Aminul Hasan Alvir, a passionate front-end developer
+            Hello, I&apos;m Aminul Hasan Alvir, a passionate front-end developer
             hailing from Dhaka, Bangladesh. Despite graduating with honors in
             LLB, my heart lies in the world of technology. I have honed my
             skills in front-end development, specializing in crafting fully
@@ -25,7 +25,7 @@ const About = () => {
             transition into a full-stack developer role in the future. I am
             enthusiastic about staying at the forefront of technology and
             contributing my skills to create innovative and user-centric digital
-            experiences. Let's build something amazing together!
+            experiences. Let&apos;s build something amazing together!
           </p>
         </div>
         <div className="about-image">

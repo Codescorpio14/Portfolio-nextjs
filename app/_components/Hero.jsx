@@ -21,6 +21,7 @@ const Hero = () => {
         height={564}
         width={1008}
         alt="hero-image"
+        priority
       />
     </section>
   );
