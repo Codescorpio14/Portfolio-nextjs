@@ -44,12 +44,12 @@ export const projectsData = [
   },
   {
     id: 5,
-    imageSrc: "/image/swiftcart.png",
-    title: "SwiftCart",
+    imageSrc: "/image/kishor-project.png",
+    title: "Kishor Portfolio",
     detail:
-      "SwiftCart, an e-commerce site.Smooth transitions and responsiveness makes online shopping delightful and efficient in all Platforms.",
-    usedLang: ["React", "CSS", "Authenticaion", "Context Api", "Rest Api"],
-    link: "https://swiftcart-alvir.netlify.app/",
+      "This site was portfolio of a client who needed a sleek and modern website for university. The website is fully responsive and user friendly.",
+    usedLang: ["Next.Js", "Tailwind Css", "SSR", "Gsap", "Framer Motion"],
+    link: "https://kishor.xyz/",
   },
   {
     id: 6,
