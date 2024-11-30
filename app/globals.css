@@ -1,5 +1,23 @@
-/* @media (prefers-color-scheme: dark) {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
   html {
-    color-scheme: dark;
+    @apply scroll-smooth bg-sky-50 dark:bg-zinc-950 transition-colors duration-300;
   }
-} */
+
+  body {
+    @apply font-poppins text-neutral-900 lg:container mx-auto dark:text-neutral-200;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-yellow-300 rounded-lg uppercase text-neutral-900 font-semibold shadow-lg shadow-slate-600/30 hover:rounded-full hover:bg-yellow-400 dark:bg-yellow-400 dark:hover:bg-yellow-500 transition-all;
+  }
+
+  .nav-links {
+    @apply text-xl lg:text-3xl lg:font-semibold uppercase hover:text-violet-400 relative after:absolute after:-bottom-0.5 after:left-0 after:h-1 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-violet-400 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 cursor-pointer;
+  }
+}

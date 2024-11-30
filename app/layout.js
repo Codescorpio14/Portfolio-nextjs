@@ -1,29 +1,23 @@
-import { Inter } from "next/font/google";
-import "./scss/main.scss";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "./_components/Header";
-import Footer from "./_components/Footer";
+import Header from "./_layout/Shared/Header";
+import Footer from "./_layout/Shared/Footer";
+import { MetaData } from "./_Config/metadata";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
-export const metadata = {
-  title: "Aminul Hasan Alvir",
-  description:
-    "This is the portfolio site of frontend developer Aminul Hasan Alvir. This page serves as the online CV of its owner. If you have any queries or need any web development related help, please feel free to contact me",
-  keywords:
-    "Frontend developer,react developer,node js, CSS, JavaScript, scss, tailwind css",
-};
+export const metadata = MetaData;
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={poppins.className}>
         <Header />
         {children}
         <Footer />
         <script
           src="https://kit.fontawesome.com/5076bed74f.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
           defer
         ></script>
       </body>

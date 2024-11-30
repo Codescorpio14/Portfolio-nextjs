@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 
 const HeroTyped = () => {
   return (
-    <span className="hero-strong">
+    <div className="font-bold text-xl md:text-3xl lg:text-4xl lg:my-2">
       <ReactTyped
         strings={["A Frontend Developer", "React Developer", "Web Designer"]}
         typeSpeed={40}
@@ -12,7 +12,7 @@ const HeroTyped = () => {
         backSpeed={50}
         loop
       />
-    </span>
+    </div>
   );
 };
 
