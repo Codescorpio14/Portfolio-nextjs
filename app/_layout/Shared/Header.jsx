@@ -23,15 +23,15 @@ const Header = () => {
 
       <button
         className="bg-inherit text-2xl hover:text-violet-400 lg:hidden"
-        onClick={() => setMobileNav((p) => !p)}
+        onClick={() => setMobileNav((prev) => !prev)}
       >
         <i className="fa-solid fa-bars"></i>
       </button>
 
       <NavBarLinks
         className={`${
-          mobileNav && "translate-x-0"
-        } fixed inset-0 top-14 transition-transform ease-out translate-x-[200%] lg:translate-x-0 lg:static`}
+          mobileNav ? "translate-x-0" : "translate-x-[200%]"
+        } fixed inset-4 top-14 transition-transform duration-500 ease-out lg:translate-x-0 lg:static`}
       >
         <ul
           className="bg-neutral-900 text-sky-50 text-center py-8 space-y-2 font-semibold lg:bg-inherit items-center lg:py-0 lg:space-y-0 lg:flex lg:gap-4 lg:text-neutral-900 lg:dark:text-sky-100"
