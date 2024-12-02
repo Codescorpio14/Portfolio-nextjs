@@ -8,6 +8,7 @@ const NavBarLinks = ({ children, className }) => {
 
   useEffect(() => {
     animate([
+      [scope.current, { opacity: [0, 1] }, { delay: 1 }],
       ["li", { opacity: [0, 1], y: [-20, 0] }, { delay: stagger(0.3) }],
     ]);
   });
