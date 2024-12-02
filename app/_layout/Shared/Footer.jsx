@@ -1,72 +1,81 @@
+import TextAnimation from "@/app/_components/animations/TextAnimation";
+import TextSlideIn from "@/app/_components/animations/TextSlideIn";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="bg-neutral-900 text-sky-50 ">
-      <a
-        href="#hero"
+      <Link
+        href="#header"
         className="bg-neutral-950 flex justify-center items-center py-4 gap-4 hover:text-violet-400 transition-colors duration-300 dark:bg-neutral-800"
       >
         <i className="fa-solid fa-angles-up fa-bounce"></i>
         <p className="uppercase">Go To Top</p>
         <i className="fa-solid fa-angles-up fa-bounce"></i>
-      </a>
+      </Link>
       <div className="grid gap-12 lg:grid-cols-3 p-8">
         <div className="lg:text-left space-y-4 lg:border-r-2">
-          <h2 className="text-xl font-bold">
-            Alvir Hasan <br />
-            <span className="text-sm">Fullstack-Developer</span>
-          </h2>
-          <p className="text-md">
-            Hello, I'm Aminul Hasan Alvir, a passionate fullstack developer
-            hailing from Dhaka, Bangladesh. Despite graduating with honors in
-            LLB, my heart lies in the world of technology. I have honed my
-            skills in front-end development, specializing in crafting fully
-            responsive and interactive web pages.
-          </p>
+          <TextSlideIn>
+            <h2 className="text-xl font-bold">
+              Alvir Hasan <br />
+              <span className="text-sm">Fullstack-Developer</span>
+            </h2>
+          </TextSlideIn>
+          <TextSlideIn>
+            <p className="text-md">
+              Hello, I&lsquo;m Aminul Hasan Alvir, a passionate fullstack
+              developer hailing from Dhaka, Bangladesh. Despite graduating with
+              honors in LLB, my heart lies in the world of technology. I have
+              honed my skills in front-end development, specializing in crafting
+              fully responsive and interactive web pages.
+            </p>
+          </TextSlideIn>
 
-          <ul className="flex gap-8 text-2xl">
-            <li>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="mailto:alvirhasan.dev@gmail.com"
-              >
-                <i className="fa-regular hover:text-violet-400  fa-envelope"></i>
-              </Link>
-            </li>
-            <li>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/codescorpio14"
-              >
-                <i className="fa-brands  hover:text-violet-400 fa-github"></i>
-              </Link>
-            </li>
-            <li>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://facebook.com/1alvir"
-              >
-                <i className="fa-brands  hover:text-violet-400 fa-facebook"></i>
-              </Link>
-            </li>
-            <li>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/1alvir"
-              >
-                <i className="fa-brands  hover:text-violet-400 fa-linkedin-in"></i>
-              </Link>
-            </li>
-          </ul>
+          <TextAnimation>
+            <ul className="flex gap-8 text-2xl">
+              <li>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:alvirhasan.dev@gmail.com"
+                >
+                  <i className="fa-regular hover:text-violet-400  fa-envelope"></i>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/codescorpio14"
+                >
+                  <i className="fa-brands  hover:text-violet-400 fa-github"></i>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://facebook.com/1alvir"
+                >
+                  <i className="fa-brands  hover:text-violet-400 fa-facebook"></i>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/1alvir"
+                >
+                  <i className="fa-brands  hover:text-violet-400 fa-linkedin-in"></i>
+                </Link>
+              </li>
+            </ul>
+          </TextAnimation>
         </div>
 
-        <div>
+        <TextSlideIn>
           <h4 className="text-xl font-semibold mb-4">Navigation Links:</h4>
+
           <ul className="flex lg:flex-col gap-4 lg:gap-2">
             <li>
               <a
@@ -101,7 +110,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </TextSlideIn>
         <div>
           <h3 className="text-xl font-semibold mb-4">Newsletter:</h3>
           <form className="flex items-end">

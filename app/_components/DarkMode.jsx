@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 
 const DarkMode = () => {
@@ -22,16 +23,18 @@ const DarkMode = () => {
   }, []);
 
   return (
-    <button
+    <motion.button
       onClick={toggleDarkMode}
       className="bg-violet-400 size-8 lg:size-12 rounded-full fixed bottom-8 right-12"
+      whileHover={{ rotate: 360 }}
+      transition={{ duration: 0.8 }}
     >
       {isDark ? (
-        <i className="fa-regular text-xl fa-sun"></i>
+        <i className="fa-regular text-xl hover:text-yellow-300 fa-sun"></i>
       ) : (
-        <i className="fa-regular text-xl fa-moon"></i>
+        <i className="fa-regular text-xl  fa-moon"></i>
       )}
-    </button>
+    </motion.button>
   );
 };
 

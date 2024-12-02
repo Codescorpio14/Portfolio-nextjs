@@ -1,12 +1,12 @@
 import Link from "next/link";
-import PageTransition from "../_components/animations/PageTransition";
+import Button from "../_components/Button";
 
 const ProjectsLayout = ({ children }) => {
   return (
-    <div className="py-8">
-      <Link href="./#projects" className="btn py-2 px-4 blo">
+    <div className="p-8">
+      <Button href="./#projects" className="py-2 px-4">
         Go Back
-      </Link>
+      </Button>
 
       <div>{children}</div>
     </div>

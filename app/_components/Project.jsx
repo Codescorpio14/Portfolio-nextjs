@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ViewScale from "./animations/ViewScale";
+import Button from "./Button";
 
 const Project = ({ imageSrc, title, detail, usedLang, slug }) => {
   const langList = usedLang.map((lang) => <p key={lang}>{lang}</p>);
@@ -32,9 +33,9 @@ const Project = ({ imageSrc, title, detail, usedLang, slug }) => {
             <p>{detail}</p>
             <div className="flex gap-2 ">{langList}</div>
 
-            <Link className="btn px-4 py-1 mb-2" href={`projects/${slug}`}>
+            <Button className="px-4 py-1 mb-2" href={`projects/${slug}`}>
               See Details
-            </Link>
+            </Button>
           </div>
         </div>
       </div>

@@ -3,12 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import NavBarLinks from "@/app/_components/animations/NavBarLinks";
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
 
   return (
-    <header className="flex justify-between items-center px-4 py-4">
+    <header id="header" className="flex justify-between items-center px-4 py-4">
       <Image
         src="/image/Logo.png"
         className="w-24 md:w-32 h-auto dark:invert"
@@ -24,7 +25,7 @@ const Header = () => {
         <i className="fa-solid fa-bars"></i>
       </button>
 
-      <nav
+      <NavBarLinks
         className={`${
           mobileNav && "translate-x-0"
         } fixed inset-0 top-14 transition-transform ease-out translate-x-[200%] lg:translate-x-0 lg:static`}
@@ -54,7 +55,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </NavBarLinks>
     </header>
   );
 };

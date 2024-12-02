@@ -1,6 +1,7 @@
 import HoverTilt from "@/app/_components/animations/HoverTilt";
 import TextSlideIn from "@/app/_components/animations/TextSlideIn";
 import ViewScale from "@/app/_components/animations/ViewScale";
+import Button from "@/app/_components/Button";
 
 const Contact = () => {
   return (
@@ -15,9 +16,9 @@ const Contact = () => {
             want to say hi, my inbox is always open. Feel free to reach out, and
             I will get back to you as soon as possible.
           </p>
-          <button className="btn px-4 py-2">
-            <a href="mailto:alvirhasan.dev@gmail.com"> Reach Out </a>
-          </button>
+          <Button href="mailto:alvirhasan.dev@gmail.com" className=" px-4 py-2">
+            Reach Out
+          </Button>
         </div>
       </ViewScale>
     </HoverTilt>

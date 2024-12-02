@@ -1,33 +1,32 @@
 "use client";
 
-import { motion } from "motion/react";
+import { useAnimate, stagger, useInView } from "motion/react";
+import { useEffect } from "react";
 
 const SkillCard = ({ title, score }) => {
+  const [scope, animate] = useAnimate();
+  const inView = useInView(scope, { once: true });
+
+  useEffect(() => {
+    if (inView) {
+      animate([["span", { opacity: [0, 1] }, { delay: stagger(0.2) }]]);
+    }
+  });
+
   return (
     <div className="grid grid-cols-2 items-center">
       <p className="uppercase md:text-xl lg:text-2xl font-bold text-violet-400 ">
         {title}
       </p>
 
-      <motion.div
-        whileInView={{
-          transition: {
-            duration: 2,
-            staggerChildren: 0.5,
-          },
-        }}
-        // viewport={{ once: true }}
-        className="flex gap-1 lg:gap-2"
-      >
+      <div ref={scope} className="flex gap-1 lg:gap-2">
         {Array.from({ length: score }, (_, index) => (
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1 } }}
+          <span
             key={index}
             className="block size-3 lg:size-5 rounded-full bg-violet-400"
-          ></motion.span>
+          ></span>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
