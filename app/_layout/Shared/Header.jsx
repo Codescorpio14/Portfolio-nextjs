@@ -9,7 +9,10 @@ const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
 
   return (
-    <header id="header" className="flex justify-between items-center px-4 py-4">
+    <header
+      id="header"
+      className="flex lg:container justify-between items-center px-4 py-4"
+    >
       <Image
         src="/image/Logo.png"
         className="w-24 md:w-32 h-auto dark:invert"

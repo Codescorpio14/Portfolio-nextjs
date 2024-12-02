@@ -13,6 +13,7 @@ const Footer = () => {
         <p className="uppercase">Go To Top</p>
         <i className="fa-solid fa-angles-up fa-bounce"></i>
       </Link>
+
       <div className="grid gap-12 lg:grid-cols-3 p-8">
         <div className="lg:text-left space-y-4 lg:border-r-2">
           <TextSlideIn>

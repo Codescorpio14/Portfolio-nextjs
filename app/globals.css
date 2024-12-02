@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-poppins text-neutral-900 lg:container mx-auto dark:text-neutral-200;
+    @apply font-poppins text-neutral-900 dark:text-neutral-200;
   }
 }
 

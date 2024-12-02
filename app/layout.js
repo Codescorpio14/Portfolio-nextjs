@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
         <PreloadAnimation />
         <Header />
         <AnimatePresence mode="wait">
-          <PageTransition>{children}</PageTransition>
+          <PageTransition>
+            <main className="lg:container">{children}</main>
+          </PageTransition>
         </AnimatePresence>
         <Footer />
         <DarkMode />
