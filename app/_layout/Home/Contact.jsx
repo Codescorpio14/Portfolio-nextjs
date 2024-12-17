@@ -11,7 +11,7 @@ const Contact = () => {
           <TextSlideIn>
             <h1 className="text-2xl uppercase font-bold">Contact Me</h1>
           </TextSlideIn>
-          <p className="p-4 text-sm font-medium md:text-base md:font-semibold">
+          <p className="p-4 text-gray-800 text-sm font-medium md:text-base md:font-semibold">
             Whether you are starting a project, have business inquiries, or just
             want to say hi, my inbox is always open. Feel free to reach out, and
             I will get back to you as soon as possible.

@@ -3,9 +3,7 @@ import Link from "next/link";
 import ViewScale from "./animations/ViewScale";
 import Button from "./Button";
 
-const Project = ({ imageSrc, title, detail, usedLang, slug }) => {
-  const langList = usedLang.map((lang) => <p key={lang}>{lang}</p>);
-
+const Project = ({ imageSrc, title, detail, slug }) => {
   return (
     <ViewScale>
       <div className="max-w-sm h-72 overflow-hidden bg-inherit shadow-lg">
@@ -21,6 +19,7 @@ const Project = ({ imageSrc, title, detail, usedLang, slug }) => {
         </div>
 
         <div className="relative cursor-pointer h-full overflow-hidden group">
+          {/* Background Image */}
           <Image
             className="w-full object-contain object-top group-hover:scale-110 transition-transform duration-500"
             width={400}
@@ -29,11 +28,11 @@ const Project = ({ imageSrc, title, detail, usedLang, slug }) => {
             alt={title}
           />
 
-          <div className="absolute inset-0 bg-violet-400/90 py-8 px-4 flex flex-col justify-between items-center -translate-y-full  group-hover:translate-y-0 transition-transform duration-500">
-            <p>{detail}</p>
-            <div className="flex gap-2 ">{langList}</div>
+          {/* Hover Slide Contents */}
+          <div className="absolute inset-0 bg-violet-400/90 py-8 px-4 flex flex-col justify-around items-center -translate-y-full  group-hover:translate-y-0 transition-transform duration-500 ease-out">
+            <p>{detail.slice(0, 120) + "..."}</p>
 
-            <Button className="px-4 py-1 mb-2" href={`projects/${slug}`}>
+            <Button className="px-4 py-1" href={`projects/${slug}`}>
               See Details
             </Button>
           </div>

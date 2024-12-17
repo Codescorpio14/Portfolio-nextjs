@@ -15,7 +15,7 @@ const Footer = () => {
       </Link>
 
       <div className="grid gap-12 lg:grid-cols-3 p-8">
-        <div className="lg:text-left space-y-4 lg:border-r-2">
+        <div className="lg:text-left space-y-4 lg:pr-4 lg:border-r-2">
           <TextSlideIn>
             <h2 className="text-xl font-bold">
               Alvir Hasan <br />
@@ -24,11 +24,9 @@ const Footer = () => {
           </TextSlideIn>
           <TextSlideIn>
             <p className="text-md">
-              Hello, I&lsquo;m Aminul Hasan Alvir, a passionate fullstack
-              developer hailing from Dhaka, Bangladesh. Despite graduating with
-              honors in LLB, my heart lies in the world of technology. I have
-              honed my skills in front-end development, specializing in crafting
-              fully responsive and interactive web pages.
+              Passionate about creating responsive and interactive web
+              experiences, I’m Aminul Hasan Alvir, a full-stack developer
+              dedicated to turning ideas into functional designs.
             </p>
           </TextSlideIn>
 

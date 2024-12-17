@@ -22,7 +22,7 @@ const SkillCard = ({ title, score }) => {
       <div ref={scope} className="flex gap-1 lg:gap-2">
         {Array.from({ length: score }, (_, index) => (
           <span
-            key={index}
+            key={title + index}
             className="block size-3 lg:size-5 rounded-full bg-violet-400"
           ></span>
         ))}

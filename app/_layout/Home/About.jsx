@@ -16,30 +16,38 @@ const About = () => {
         <div className="py-8 px-4 lg:text-left space-y-4 text-sm md:text-base">
           <TextAnimation>
             <p>
-              Hello, I&apos;m Aminul Hasan Alvir, a passionate front-end
-              developer hailing from Dhaka, Bangladesh. Despite graduating with
-              honors in LLB, my heart lies in the world of technology. I have
-              honed my skills in front-end development, specializing in crafting
-              fully responsive and interactive web pages.
+              Hello, I&apos;m Aminul Hasan Alvir, a passionate Full-Stack
+              Developer dedicated to creating seamless digital solutions from
+              Front to Back-end. My journey in technology has been fueled by my
+              love for innovation and continuous learning, enabling me to
+              deliver user-centric applications with modern technologies.
             </p>
           </TextAnimation>
           <TextAnimation>
             <p>
-              My arsenal includes proficiency in HTML, CSS, and vanilla
-              JavaScript. I am adept at utilizing CSS frameworks such as
-              Tailwind, and Sass to enhance the aesthetic and functionality of
-              my projects. Additionally, I have embraced the power of React.js
-              and its libraries to bring dynamic and seamless user experiences
-              to life.
+              I specialize in building dynamic, responsive web and mobile
+              applications using React.js, Next.js, and React Native. My
+              back-end expertise includes Node JS, Python, Django, and Django
+              Rest Framework (DRF), which allow me to create robust APIs and
+              scalable server-side solutions. Alongside this, I&apos;ve honed my
+              skills in database such both SQL and NoSQL. Which allows me to be
+              work in MERN stack and other full stack solutions.
             </p>
           </TextAnimation>
           <TextAnimation>
             <p>
-              With a firm foundation in front-end technologies, I aspire to
-              transition into a full-stack developer role in the future. I am
-              enthusiastic about staying at the forefront of technology and
-              contributing my skills to create innovative and user-centric
-              digital experiences. Let&apos;s build something amazing together!
+              With a strong command of CSS UI libraries like SCSS, Tailwind CSS,
+              Shadcn, Material UI and others, I craft clean and visually
+              appealing interfaces that Enhance user experiences. Whether
+              it&apos;s developing a sleek front-end, architecting a solid
+              back-end, or integrating the two seamlessly, I thrive on tackling
+              challenges and delivering quality results.
+            </p>
+          </TextAnimation>
+          <TextAnimation>
+            <p>
+              Let&apos;s collaborate to build impactful, innovative digital
+              experiences!
             </p>
           </TextAnimation>
         </div>
