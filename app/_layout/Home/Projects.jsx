@@ -1,13 +1,10 @@
 import Link from "next/link";
 import Project from "../../_components/Project";
 import { projectsData } from "@/app/_data/projects";
-import Button from "@/app/_components/Button";
 import TextAnimation from "@/app/_components/animations/TextAnimation";
 
 const Projects = () => {
-  const projectElm = projectsData
-    .slice(0, 6)
-    .map((project) => <Project key={project.id} {...project} />);
+  const featuredProjects = projectsData.filter((project) => project.isFeatured);
 
   return (
     <section id="projects" className="py-8 px-4 text-center">
@@ -17,7 +14,9 @@ const Projects = () => {
         </h1>
       </TextAnimation>
       <div className="flex flex-wrap justify-center gap-10 mt-8">
-        {projectElm}
+        {featuredProjects.map((project) => (
+          <Project key={project.id} {...project} />
+        ))}
       </div>
 
       <Link

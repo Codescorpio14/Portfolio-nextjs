@@ -19,6 +19,7 @@ export const projectsData = [
     ],
     link: "https://linkshorter-alvir.netlify.app",
     slug: "shortly",
+    isFeatured: true,
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ export const projectsData = [
     usedLang: ["Html", "Css", "JavaScript", "Vite"],
     link: "https://sunnyside-alvir.netlify.app/",
     slug: "sunnyside",
+    isFeatured: true,
   },
   {
     id: 3,
@@ -43,6 +45,7 @@ export const projectsData = [
     usedLang: ["React", "React Router", "Scss", "Redux", "Axios"],
     link: "https://audiophile-alvir.netlify.app/",
     slug: "audiophile",
+    isFeatured: true,
   },
   {
     id: 4,
@@ -55,6 +58,7 @@ export const projectsData = [
     usedLang: ["React", "Css", "JavaScript", "Vite"],
     link: "https://tenzies-alvir.netlify.app/",
     slug: "tenzies",
+    isFeatured: true,
   },
   {
     id: 5,
@@ -67,6 +71,7 @@ export const projectsData = [
     usedLang: ["Next.Js", "Tailwind Css", "SSR", "Gsap", "Framer Motion"],
     link: "https://kishor.xyz/",
     slug: "kishor-portfolio",
+    isFeatured: true,
   },
   {
     id: 6,
@@ -79,5 +84,6 @@ export const projectsData = [
     usedLang: ["React", "Next js", "Tailwind CSS", "SSR"],
     link: "https://countries-alvir.netlify.app/",
     slug: "rest-countries",
+    isFeatured: true,
   },
 ];

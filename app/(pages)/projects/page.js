@@ -14,7 +14,7 @@ const ProjectsPage = () => {
       </TextAnimation>
       <div className="grid grid-cols-3 border text-center bg-violet-300 dark:text-neutral-900">
         <p className=" uppercase font-semibold p-2">Project Name </p>
-        <p className=" uppercase font-semibold p-2">Platform/Framework </p>
+        <p className=" uppercase font-semibold p-2">Framework </p>
         <p className=" uppercase font-semibold p-2">Year</p>
       </div>
       <StaggerSlideIn>
