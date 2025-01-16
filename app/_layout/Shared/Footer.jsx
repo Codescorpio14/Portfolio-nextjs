@@ -103,7 +103,7 @@ const Footer = () => {
             <li>
               <a
                 className="hover:text-violet-400 transition-colors"
-                href="#Contact"
+                href="#contact"
               >
                 Contact
               </a>

@@ -53,7 +53,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className="nav-links" href="../#Contact">
+            <Link className="nav-links" href="../#contact">
               Contact
             </Link>
           </li>

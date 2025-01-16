@@ -15,7 +15,7 @@ const Works = () => {
           <div key={work.title} className="max-w-[360px]">
             <i className={` text-violet-400 text-7xl pb-8 ${work.icon}`}></i>
             <TextSlideIn>
-              <h3 className="text-2xl uppercase font-semibold mb-6">
+              <h3 className="text-2xl uppercase font-semibold mb-6 text-violet-400">
                 {work.title}
               </h3>
             </TextSlideIn>

@@ -12,6 +12,7 @@ const About = () => {
           About me
         </h1>
       </TextSlideIn>
+
       <div className="py-8px-2 lg:flex gap-8 justify-between ">
         <div className="py-8 px-4 lg:text-left space-y-4 text-sm md:text-base">
           <TextAnimation>
@@ -23,6 +24,7 @@ const About = () => {
               deliver user-centric applications with modern technologies.
             </p>
           </TextAnimation>
+
           <TextAnimation>
             <p>
               I specialize in building dynamic, responsive web and mobile
@@ -34,6 +36,7 @@ const About = () => {
               work in MERN stack and other full stack solutions.
             </p>
           </TextAnimation>
+
           <TextAnimation>
             <p>
               With a strong command of CSS UI libraries like SCSS, Tailwind CSS,
@@ -44,6 +47,7 @@ const About = () => {
               challenges and delivering quality results.
             </p>
           </TextAnimation>
+
           <TextAnimation>
             <p>
               Let&apos;s collaborate to build impactful, innovative digital

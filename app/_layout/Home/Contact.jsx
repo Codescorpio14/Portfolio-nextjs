@@ -7,7 +7,10 @@ const Contact = () => {
   return (
     <HoverTilt>
       <ViewScale containerStyle="p-8">
-        <div className="max-w-4xl mx-auto  text-center rounded-lg bg-gradient-to-br from-violet-600 to-violet-500 text-neutral-900 p-4 shadow-lg shadow-gray-800/30">
+        <div
+          id="contact"
+          className="max-w-4xl mx-auto  text-center rounded-lg bg-gradient-to-br from-violet-600 to-violet-500 text-neutral-900 p-4 shadow-lg shadow-gray-800/30"
+        >
           <TextSlideIn>
             <h1 className="text-2xl uppercase font-bold">Contact Me</h1>
           </TextSlideIn>

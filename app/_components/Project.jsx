@@ -24,7 +24,7 @@ const Project = ({ imageSrc, title, detail, slug }) => {
             className="w-full object-contain object-top group-hover:scale-110 transition-transform duration-500"
             width={400}
             height={300}
-            src={imageSrc}
+            src={imageSrc.main}
             alt={title}
           />
 
