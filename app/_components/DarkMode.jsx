@@ -25,7 +25,7 @@ const DarkMode = () => {
   return (
     <motion.button
       onClick={toggleDarkMode}
-      className="bg-violet-400 size-8 lg:size-12 rounded-full fixed bottom-8 right-12"
+      className="bg-violet-400 size-8 lg:size-12 rounded-full fixed bottom-8 right-12 dark:bg-violet-500"
       whileHover={{ rotate: 360 }}
       transition={{ duration: 0.8 }}
     >

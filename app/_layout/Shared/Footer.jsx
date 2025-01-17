@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-neutral-900 text-sky-50 ">
       <Link
         href="#header"
-        className="bg-neutral-950 flex justify-center items-center py-4 gap-4 hover:text-violet-400 transition-colors duration-300 dark:bg-neutral-800"
+        className="bg-neutral-950 flex justify-center items-center py-4 gap-4 hover:text-yellow-400 transition-colors duration-300 dark:bg-neutral-800"
       >
         <i className="fa-solid fa-angles-up fa-bounce"></i>
         <p className="uppercase">Go To Top</p>
