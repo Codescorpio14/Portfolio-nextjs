@@ -1,6 +1,5 @@
-import TextAnimation from "@/app/_components/animations/TextAnimation";
-import TextSlideIn from "@/app/_components/animations/TextSlideIn";
-import { workData } from "@/app/_data/work";
+import { TextAnimation, TextSlideIn } from "@/app/_components/animations";
+import { workData } from "@/app/_data";
 
 const Works = () => {
   return (

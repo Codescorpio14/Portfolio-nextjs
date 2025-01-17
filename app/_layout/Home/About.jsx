@@ -1,7 +1,9 @@
-import HoverTilt from "@/app/_components/animations/HoverTilt";
-import TextAnimation from "@/app/_components/animations/TextAnimation";
-import TextSlideIn from "@/app/_components/animations/TextSlideIn";
-import ViewScale from "@/app/_components/animations/ViewScale";
+import {
+  HoverTilt,
+  TextAnimation,
+  TextSlideIn,
+  ViewScale,
+} from "@/app/_components/animations";
 import Image from "next/image";
 
 const About = () => {

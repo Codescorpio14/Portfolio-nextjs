@@ -1,7 +1,9 @@
-import HoverTilt from "@/app/_components/animations/HoverTilt";
-import TextSlideIn from "@/app/_components/animations/TextSlideIn";
-import ViewScale from "@/app/_components/animations/ViewScale";
-import Button from "@/app/_components/Button";
+import {
+  HoverTilt,
+  TextSlideIn,
+  ViewScale,
+} from "@/app/_components/animations";
+import { Button } from "@/app/_components";
 
 const Contact = () => {
   return (

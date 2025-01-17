@@ -1,12 +1,11 @@
 import { Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "./_layout/Shared/Header";
-import Footer from "./_layout/Shared/Footer";
 import { MetaData } from "./_Config/metadata";
+import "./globals.css";
+
+import { Header, Footer } from "./_layout/Shared/";
 import { AnimatePresence } from "motion/react";
-import PageTransition from "./_components/animations/PageTransition";
-import DarkMode from "./_components/DarkMode";
-import PreloadAnimation from "./_components/PreloadAnimation";
+import { DarkMode, PreloadAnimation } from "./_components/";
+import { PageTransition } from "./_components/animations";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 

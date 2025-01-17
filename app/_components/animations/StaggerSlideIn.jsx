@@ -11,7 +11,7 @@ const StaggerSlideIn = ({ children }) => {
       [
         "#project-link",
         { opacity: [0, 1], x: [-20, 0] },
-        { delay: stagger(0.5) },
+        { delay: stagger(0.3) },
       ],
     ]);
   });

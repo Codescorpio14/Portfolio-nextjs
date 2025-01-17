@@ -1,9 +1,10 @@
-import HoverTilt from "@/app/_components/animations/HoverTilt";
-import HeroTyped from "../../_components/HeroTyped";
+import {
+  HoverTilt,
+  ViewScale,
+  TextSlideIn,
+} from "@/app/_components/animations";
+import { HeroTyped, Button } from "../../_components";
 import Image from "next/image";
-import Button from "@/app/_components/Button";
-import ViewScale from "@/app/_components/animations/ViewScale";
-import TextSlideIn from "@/app/_components/animations/TextSlideIn";
 
 const Hero = () => {
   return (

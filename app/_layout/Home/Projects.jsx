@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Project from "../../_components/Project";
-import { projectsData } from "@/app/_data/projects";
-import TextAnimation from "@/app/_components/animations/TextAnimation";
+import { Project } from "@/app/_components";
+import { projectsData } from "@/app/_data";
+import { TextAnimation } from "@/app/_components/animations";
 
 const Projects = () => {
   const featuredProjects = projectsData.filter((project) => project.isFeatured);

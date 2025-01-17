@@ -1,5 +1,5 @@
-import SkillCard from "@/app/_components/SkillCard";
-import { skillData } from "@/app/_data/skills";
+import { SkillCard } from "@/app/_components";
+import { skillData } from "@/app/_data";
 
 const Skills = () => {
   return (

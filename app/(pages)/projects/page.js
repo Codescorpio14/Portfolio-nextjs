@@ -1,6 +1,6 @@
-import StaggerSlideIn from "@/app/_components/animations/StaggerSlideIn";
-import TextAnimation from "@/app/_components/animations/TextAnimation";
-import { projectsData } from "@/app/_data/projects";
+import { projectsData } from "@/app/_data";
+
+import { StaggerSlideIn, TextAnimation } from "@/app/_components/animations";
 import Link from "next/link";
 
 const ProjectsPage = () => {

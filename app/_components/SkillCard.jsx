@@ -23,7 +23,7 @@ const SkillCard = ({ title, score }) => {
         {Array.from({ length: score }, (_, index) => (
           <span
             key={title + index}
-            className="block size-3 lg:size-5 rounded-full bg-violet-400"
+            className="block size-3 lg:size-5 rounded-full bg-violet-400 "
           ></span>
         ))}
       </div>

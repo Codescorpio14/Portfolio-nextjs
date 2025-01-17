@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import ViewScale from "./animations/ViewScale";
 import Button from "./Button";
 

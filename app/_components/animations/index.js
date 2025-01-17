@@ -4,6 +4,7 @@ import ViewScale from "./ViewScale";
 import TextAnimation from "./TextAnimation";
 import StaggerSlideIn from "./StaggerSlideIn";
 import PageTransition from "./PageTransition";
+import HoverTilt from "./HoverTilt";
 
 export {
   NavBarLinks,
@@ -12,4 +13,5 @@ export {
   TextSlideIn,
   StaggerSlideIn,
   PageTransition,
+  HoverTilt,
 };

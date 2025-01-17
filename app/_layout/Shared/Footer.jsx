@@ -1,5 +1,4 @@
-import TextAnimation from "@/app/_components/animations/TextAnimation";
-import TextSlideIn from "@/app/_components/animations/TextSlideIn";
+import { TextAnimation, TextSlideIn } from "@/app/_components/animations";
 import Link from "next/link";
 
 const Footer = () => {

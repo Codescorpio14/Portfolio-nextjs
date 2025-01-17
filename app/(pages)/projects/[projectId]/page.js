@@ -1,6 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
-import { projectsData } from "@/app/_data/projects";
+import { projectsData } from "@/app/_data";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -40,7 +40,7 @@ const SingleProjectPage = () => {
           </div>
         </TextAnimation>
 
-        <div className="grid my-8 p-4 gap-8 md:grid-cols-6 lg:grid-rows-2">
+        <div className="grid my-8 mx-4 gap-8 md:grid-cols-6 lg:grid-rows-2">
           <ViewScale containerStyle="md:col-span-6 lg:col-span-4 lg:row-span-2">
             <Image
               alt={matchedProject.title}
@@ -74,15 +74,15 @@ const SingleProjectPage = () => {
 
         <div>
           <TextSlideIn>
-            <h4 className="font-semibold text-2xl uppercase text-center">
+            <h4 className="font-semibold text-2xl uppercase ">
               Technologies Used:
             </h4>
           </TextSlideIn>
           <TextAnimation>
-            <div className="flex gap-4 my-4 mx-2 flex-wrap justify-center mb-16">
+            <div className="flex gap-4 my-4 mx-2 flex-wrap mb-10">
               {matchedProject.usedLang.map((lang, index) => (
                 <p
-                  className="bg-violet-300 rounded-md px-2 text-xl dark:bg-violet-500"
+                  className="bg-violet-300  shadow-md rounded-md px-2 text-xl dark:bg-violet-500"
                   key={index}
                 >
                   {lang}

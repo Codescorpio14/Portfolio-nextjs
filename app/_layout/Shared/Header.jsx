@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import NavBarLinks from "@/app/_components/animations/NavBarLinks";
+import { NavBarLinks } from "@/app/_components/animations";
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
